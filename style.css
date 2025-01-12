@@ -1,0 +1,160 @@
+
+.grid-container {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "p2 p1";
+    height: 100vh; /* Chiếm toàn bộ chiều cao màn hình */
+    width: 100vw;
+    border-radius: 6px;
+  }
+.p1 {
+    grid-area: p1;
+    background-color: #fdd350;
+}
+.p2{
+    display: grid;
+    grid-area:p2;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "speakers"
+    "p3";
+    /* height: 100%;
+    width:100%; */
+}  
+.speakers {
+    grid-area: speakers;
+    background-color:#6500f4;
+    /* height: 50%; */
+}
+.p3 {
+    grid-area: p3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "p4 tickets";
+}
+.tickets {
+    grid-area: tickets;
+    background-color: #ee0314;
+}
+.p4 {
+    grid-area: p4;
+    display: grid;
+    grid-template-rows:1fr 1fr;
+    grid-template-areas: "sponsor"
+    "p5";
+}
+.sponsors {
+    grid-area:sponsor;
+    background-color: #00e3ea;
+}
+.p5{
+    grid-area: p5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "p6 venue";
+}
+.venue {
+    grid-area: venue;
+    background-color: #00b852;
+}
+.p6 {
+    grid-area: p6;
+    display: grid;
+    grid-template-rows:1fr 1fr;
+    grid-template-areas: "home"
+    "p7";
+}
+.home {
+    background-color: #fdd54d;
+    grid-area: home;
+}
+.p7 {
+    grid-area: p7;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "p8 tim";
+}
+.tim {
+    grid-area: tim;
+    background-color:#6500f5 ;
+}
+.p8 {
+    grid-area: p8;
+    display: grid;
+    grid-template-rows:1fr 1fr;
+    grid-template-areas: "close"
+    "p9";
+}
+.close {
+    background-color: #312d29;
+    grid-area: close;
+}
+.p9 {
+    grid-area: p9;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "p9_1 p9_2";
+}
+.p9_1{
+    grid-area: p9_1;
+    background-color: #fdd350;
+}
+.p9_2 {
+    grid-area: p9_2;
+    background-color: #ee0314;
+}
+@media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr; /* Chuyển thành một cột */
+      grid-template-areas: 
+        "p1"
+        "p2";
+    }
+  
+    .p2 {
+      grid-template-rows: 1fr; /* Chỉ có một hàng */
+    }
+  
+    .p3 {
+      grid-template-columns: 1fr; /* Chuyển sang một cột */
+      grid-template-areas: 
+        "p4"
+        "tickets";
+    }
+  
+    .p5 {
+      grid-template-columns: 1fr; /* Chuyển sang một cột */
+      grid-template-areas: 
+        "p6"
+        "venue";
+    }
+  
+    .p7 {
+      grid-template-columns: 1fr; /* Chuyển sang một cột */
+      grid-template-areas: 
+        "p8"
+        "tim";
+    }
+  
+    .p8 {
+      grid-template-columns: 1fr; /* Chuyển sang một cột */
+      grid-template-areas: 
+        "close"
+        "p9";
+    }
+  
+    .p9 {
+      grid-template-columns: 1fr; /* Chuyển sang một cột */
+      grid-template-areas: 
+        "p9_1"
+        "p9_2";
+    }
+  }
+  
+  
