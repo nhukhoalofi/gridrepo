@@ -1,4 +1,9 @@
-
+body {
+    padding:0;
+    margin:0;
+    font-family: Arial, sans-serif;
+    color:#fffefb;
+}
 .grid-container {
     overflow: hidden;
     display: grid;
@@ -12,7 +17,18 @@
 .p1 {
     grid-area: p1;
     background-color: #fdd350;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.content {
+    text-align:center;
+    font-size:15px;
+}
+.content> p{
+    font-size: 30px;
+}
+
 .p2{
     display: grid;
     grid-area:p2;
@@ -27,6 +43,16 @@
     grid-area: speakers;
     background-color:#6500f4;
     /* height: 50%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contentspeaker {
+    text-align: center;
+    font-size:10px;
+}
+.contentspeaker>p{
+    font-size:25px;
 }
 .p3 {
     grid-area: p3;
@@ -38,6 +64,16 @@
 .tickets {
     grid-area: tickets;
     background-color: #ee0314;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenttickets{
+    text-align: center;
+    font-size: 10px;
+}
+.contenttickets>p{
+    font-size:20px;
 }
 .p4 {
     grid-area: p4;
@@ -49,6 +85,16 @@
 .sponsors {
     grid-area:sponsor;
     background-color: #00e3ea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contentsponsors {
+    text-align:center;
+    font-size:10px;
+}
+.contentsponsors>p{
+    font-size:20px;
 }
 .p5{
     grid-area: p5;
@@ -60,6 +106,16 @@
 .venue {
     grid-area: venue;
     background-color: #00b852;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contentvenue {
+    text-align: center;
+    font-size: 10px;
+}
+.contentvenue>p {
+    font-size:20px;
 }
 .p6 {
     grid-area: p6;
@@ -71,6 +127,10 @@
 .home {
     background-color: #fdd54d;
     grid-area: home;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
 }
 .p7 {
     grid-area: p7;
@@ -93,6 +153,10 @@
 .close {
     background-color: #312d29;
     grid-area: close;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
 }
 .p9 {
     grid-area: p9;
@@ -156,5 +220,5 @@
         "p9_2";
     }
   }
-  
+ 
   
